@@ -1,5 +1,6 @@
 """Configuration file for the Sphinx documentation builder.
-all options: http://www.sphinx-doc.org/en/master/config
+
+All options: http://www.sphinx-doc.org/en/master/config
 """
 import datetime
 import os
@@ -8,7 +9,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath("..{{ cookiecutter.project_slug }}"))
 
-import {{ cookiecutter.importable_name }}
+import {{ cookiecutter.importable_name }} # noqa
 
 project = "{{ cookiecutter.project_slug }}"
 # replace this with your own versioning or leave it to see when docs where last build
