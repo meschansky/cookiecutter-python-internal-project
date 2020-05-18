@@ -1,11 +1,8 @@
-def get_version():
-    from pathlib import Path
+"""Root package."""
+from ._version import get_versions
 
-    try:
-        return (Path(__file__).parents[1] / "VERSION").read_text().strip()
-    except FileNotFoundError:
-        return "0.0.0dev0"
-
+__version__ = get_versions()["version"]
+del get_versions
 
 if __name__ == "__main__":
-    print(f"installed version of this project: {get_version()}")
+    print(f"installed version of this project: {__version__}")
