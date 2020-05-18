@@ -1,5 +1,9 @@
 {
   "project_slug": "cool-new-project",
+  "github_user": "yourOrganizationName",
   "importable_name": "{{ cookiecutter.project_slug.lower().replace('-', '_') }}",
-  "project_url": "https://example.com/todo-adjust-for-your-organisation/{{ cookiecutter.project_slug }}"
+  "project_url": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}",
+  "full_name": "Your Full Name",
+  "email": "{{ cookiecutter.github_user }}@example.com",
+  "python_version": "3.7"
 }
